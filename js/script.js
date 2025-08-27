@@ -33,10 +33,10 @@ if(age < 18){
     price = km * 0.21;
     const  discount = (price * 40)/ 100;
     price = price - discount;
-    console.log("età: "+ age + " anni" + "," + "distanza: " + km + "km");
+    console.log("età: "+ age + " anni" + " - " + "distanza: " + km + "km");
     console.log("Prezzo del biglietto: €" + price.toFixed(2))
 }else{
     price = km * 0.21;
-    console.log("età: "+ age + " anni" + "," + "distanza: " + km + "km");
+    console.log("età: "+ age + " anni" + " - " + "distanza: " + km + "km");
     console.log("Prezzo del biglietto: €" + price.toFixed(2))
 }
