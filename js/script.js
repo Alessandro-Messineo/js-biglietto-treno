@@ -20,5 +20,23 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 const age = parseInt(prompt("Inserisci l'età"));
 const km = parseInt(prompt("Inserisci i chilometri che devi percorrere"));
 
+let price;
 
-console.log(age , km);
+//calcolo prezzo biglietto
+if(age < 18){
+    price = km * 0.21;
+    const  discount = (price * 20)/ 100;
+    price = price - discount;
+    console.log("età: "+ age + " anni" + " - " + "distanza: " + km + "km");
+    console.log("Prezzo del biglietto: €" + price.toFixed(2))
+}else if(age >65){
+    price = km * 0.21;
+    const  discount = (price * 40)/ 100;
+    price = price - discount;
+    console.log("età: "+ age + " anni" + "," + "distanza: " + km + "km");
+    console.log("Prezzo del biglietto: €" + price.toFixed(2))
+}else{
+    price = km * 0.21;
+    console.log("età: "+ age + " anni" + "," + "distanza: " + km + "km");
+    console.log("Prezzo del biglietto: €" + price.toFixed(2))
+}
